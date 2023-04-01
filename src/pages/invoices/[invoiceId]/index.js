@@ -67,6 +67,39 @@ const InvoiceDetails = () => {
           </div>
         </div>
       </div>
+      {/* invoice items */}
+      <div className='invoice__item-box'>
+        <ul className='list'>
+          <li className='list__item'>
+            <p className='item__name-box'>Item Name</p>
+            <p className='list__name-box'>QTY</p>
+            <p className='list__name-box'>Price</p>
+            <p className='list__name-box'>Total</p>
+          </li>
+
+          {/*Invoice item */}
+          <li className='list__item'>
+            <div className='item__name-box'>
+              <h5>Ecommerce Website</h5>
+            </div>
+
+            <div className='list__item-box'>
+              <p>2</p>
+            </div>
+            <div className='list__item-box'>
+              <p>$225</p>
+            </div>
+            <div className='list__item-box'>
+              <p>$450</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      {/* grand total */}
+      <div className='grand__total'>
+        <h5>Grand Total</h5>
+        <h2>$450</h2>
+      </div>
     </div>
   );
 };

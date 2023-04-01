@@ -20,7 +20,7 @@ export default function Home(props) {
       </div>
       <div className='invoice__container'>
         {/*invoice item */}
-        <Link href={`/invoices/id`} passRef key={invoice.id}>
+        <Link href={`/invoices/${invoice.id}`} passRef key={invoice.id}>
           <div className='invoice__item'>
             <div>
               <h5 className='invoice__id'>RT59F0</h5>
